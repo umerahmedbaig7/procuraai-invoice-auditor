@@ -29,9 +29,8 @@
 
 <div align="center">
 
-![Dashboard summary with flagged invoices and estimated exposure](docs/images/dashboard-summary.png)
-
-![Evidence viewer showing the contract clause behind a finding](docs/images/dashboard-evidence.png)
+![Dashboard Summary](outputs/01_dashboard_summary.png)
+*ProcuraAI Dashboard: High-level audit metrics, flagged invoices, and estimated financial exposure.*
 
 </div>
 
@@ -263,6 +262,10 @@ Dataset (seed 20250101, regenerated bit-for-bit)
 
 > Attach the **actual contract or policy passage** to each finding — or say that no evidence was found.
 
+> 📸 **RAG Evidence Viewer**
+> ![RAG Evidence Viewer](outputs/02_rag_evidence_viewer.png)
+> *Every finding is backed by a verifiable contract clause or policy citation, shown side-by-side with the invoice data.*
+
 **What this stage does:**
 - Section-aware chunking with configurable size and overlap; price schedules are chunked by row.
 - **Dense (FAISS) + keyword (BM25) hybrid retrieval** with reciprocal-rank fusion and supplier / document-type filters.
@@ -340,6 +343,10 @@ Dataset (seed 20250101, regenerated bit-for-bit)
 
 - **FastAPI:** Pydantic request/response models, meaningful status codes, optional `X-API-Key`, SQLite persistence (**paths and hashes only — never file contents**), background audit runs.
 - **Streamlit dashboard:** multi-file upload, document preview, severity/status filters, evidence viewer with the cited source, review queue, and JSON / Markdown / CSV / Excel downloads. Works in-process or against the API. The Gemini key never reaches the browser.
+
+> 📸 **Batch Upload Pipeline**
+> ![Batch Upload](outputs/03_batch_upload.png)
+> *Drop a ZIP of invoices, POs, and delivery notes. The LangGraph agents process them automatically.*
 
 ---
 
@@ -545,6 +552,20 @@ Ground truth is used **only for scoring**. A prediction is an (invoice, finding-
 | Gemini calls in the evaluation | 0 (no key used; rule-based extraction) |
 
 > **How to read this.** The structured score shows the generator and engine are consistent — they were written together — **not** accuracy on real invoices. The document column is the more informative number, and OCR quality is the weak link.
+
+<br>
+
+<div align="center">
+
+**Exported Audit Reports (Excel)**
+
+![Excel Findings Export](outputs/04_excel_findings_export.png)
+*Findings Export: Detailed line-item discrepancies with expected vs. observed values and financial exposure.*
+
+![Excel Summary Export](outputs/05_excel_summary_export.png)
+*Summary Export: High-level audit metrics, JSON breakdowns by finding code, and audit metadata.*
+
+</div>
 
 ---
 
