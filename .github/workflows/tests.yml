@@ -15,7 +15,9 @@ jobs:
           pip install -r requirements.txt
           pip install -e . --no-deps
       - name: Run unit tests (no API key is used or required)
-        run: pytest --junitxml=test-results.xml
+        run: |
+          mkdir -p reports
+          pytest --junitxml=reports/test-results.xml
       - uses: actions/upload-artifact@v4
         if: always()
-        with: { name: test-results, path: test-results.xml }
+        with: { name: test-results, path: reports/test-results.xml }
