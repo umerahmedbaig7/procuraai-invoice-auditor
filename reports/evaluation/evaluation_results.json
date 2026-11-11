@@ -1,1 +1,899 @@
-
+{
+  "structured_path": {
+    "n_invoices": 72,
+    "tp": 54,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fp_non_info": 0,
+    "fp_info_only": 0,
+    "fp_status_confirmed": 0,
+    "fp_non_info_on_high_confidence_invoices": 0,
+    "precision_excl_info_fp": 1.0,
+    "f1_excl_info_fp": 1.0,
+    "per_code": [
+      {
+        "code": "AMBIGUOUS_PRODUCT",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "product"
+      },
+      {
+        "code": "CONTRACT_NOT_EFFECTIVE",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "contract"
+      },
+      {
+        "code": "CURRENCY_MISMATCH",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "currency"
+      },
+      {
+        "code": "DATE_REFERENCE_INCONSISTENT",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "references"
+      },
+      {
+        "code": "DISCOUNT_ERROR",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "pricing"
+      },
+      {
+        "code": "DUPLICATE_EXACT",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "duplicate"
+      },
+      {
+        "code": "GRAND_TOTAL_ERROR",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "arithmetic"
+      },
+      {
+        "code": "LINE_SUBTOTAL_ERROR",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "arithmetic"
+      },
+      {
+        "code": "MISSING_DC",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "documents"
+      },
+      {
+        "code": "MISSING_PO",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "documents"
+      },
+      {
+        "code": "MISSING_TAX_INFO",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "tax"
+      },
+      {
+        "code": "PARTIAL_DELIVERY_RECONCILED",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "quantity"
+      },
+      {
+        "code": "POSSIBLE_DUPLICATE",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "duplicate"
+      },
+      {
+        "code": "PO_DC_QTY_CONFLICT",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "quantity"
+      },
+      {
+        "code": "PRICE_ABOVE_CONTRACT",
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "pricing"
+      },
+      {
+        "code": "PRODUCT_DESCRIPTION_VARIANT",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "product"
+      },
+      {
+        "code": "QTY_EXCEEDS_ORDERED",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "quantity"
+      },
+      {
+        "code": "QTY_EXCEEDS_RECEIVED",
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "quantity"
+      },
+      {
+        "code": "SUPPLIER_DETAILS_INCONSISTENT",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "supplier"
+      },
+      {
+        "code": "TAX_CALC_ERROR",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "arithmetic"
+      },
+      {
+        "code": "TAX_RATE_POLICY_MISMATCH",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "tax"
+      },
+      {
+        "code": "UNAUTHORIZED_CHARGE",
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "charges"
+      },
+      {
+        "code": "UNKNOWN_PRODUCT_CODE",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "product"
+      },
+      {
+        "code": "UNKNOWN_SUPPLIER",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "supplier"
+      }
+    ],
+    "invoice_level_confusion": {
+      "anomalous->flagged": 42,
+      "clean->not_flagged": 30
+    },
+    "false_positives": [],
+    "false_negatives": [],
+    "severity_agreement": 1.0,
+    "status_agreement": 1.0,
+    "line_attribution_accuracy": 1.0,
+    "exposure_invoices_within_1pkr": 72,
+    "exposure_mae": "0.00",
+    "exposure_expected_total": "843027.52",
+    "exposure_engine_total": "843027.52",
+    "exposure_mismatches": [],
+    "clean_invoices": 26,
+    "clean_invoices_with_anomaly_labels": 0,
+    "low_confidence_invoices": 0,
+    "citations": {
+      "citations": 85,
+      "verified": 85,
+      "invalid": [],
+      "findings_with_evidence": 45,
+      "findings_total": 50
+    },
+    "timings": {
+      "document_intelligence_s": 0.382,
+      "procurement_evidence_s": 0.004,
+      "reconciliation_audit_s": 0.067,
+      "reporting_review_s": 0.0,
+      "total_s": 0.651,
+      "orchestrator": "langgraph"
+    }
+  },
+  "document_path": {
+    "n_invoices": 72,
+    "tp": 53,
+    "fp": 23,
+    "fn": 1,
+    "precision": 0.6974,
+    "recall": 0.9815,
+    "f1": 0.8154,
+    "fp_non_info": 19,
+    "fp_info_only": 4,
+    "fp_status_confirmed": 0,
+    "fp_non_info_on_high_confidence_invoices": 11,
+    "precision_excl_info_fp": 0.7361,
+    "f1_excl_info_fp": 0.8413,
+    "per_code": [
+      {
+        "code": "AMBIGUOUS_PRODUCT",
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "scenario": "product"
+      },
+      {
+        "code": "CONTRACT_NOT_EFFECTIVE",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "contract"
+      },
+      {
+        "code": "CURRENCY_MISMATCH",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "currency"
+      },
+      {
+        "code": "DATE_REFERENCE_INCONSISTENT",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "references"
+      },
+      {
+        "code": "DISCOUNT_ERROR",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "pricing"
+      },
+      {
+        "code": "DUPLICATE_EXACT",
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "scenario": "duplicate"
+      },
+      {
+        "code": "GRAND_TOTAL_ERROR",
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "scenario": "arithmetic"
+      },
+      {
+        "code": "LINE_SUBTOTAL_ERROR",
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "scenario": "arithmetic"
+      },
+      {
+        "code": "MISSING_DC",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "documents"
+      },
+      {
+        "code": "MISSING_PO",
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "documents"
+      },
+      {
+        "code": "MISSING_TAX_INFO",
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "scenario": "tax"
+      },
+      {
+        "code": "PARTIAL_DELIVERY_RECONCILED",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "quantity"
+      },
+      {
+        "code": "POSSIBLE_DUPLICATE",
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "scenario": "duplicate"
+      },
+      {
+        "code": "PO_DC_QTY_CONFLICT",
+        "tp": 2,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.2857,
+        "recall": 1.0,
+        "f1": 0.4444,
+        "scenario": "quantity"
+      },
+      {
+        "code": "PRICE_ABOVE_CONTRACT",
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "pricing"
+      },
+      {
+        "code": "PRODUCT_DESCRIPTION_VARIANT",
+        "tp": 2,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "scenario": "product"
+      },
+      {
+        "code": "QTY_EXCEEDS_ORDERED",
+        "tp": 2,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.2857,
+        "recall": 1.0,
+        "f1": 0.4444,
+        "scenario": "quantity"
+      },
+      {
+        "code": "QTY_EXCEEDS_RECEIVED",
+        "tp": 4,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.5714,
+        "recall": 1.0,
+        "f1": 0.7273,
+        "scenario": "quantity"
+      },
+      {
+        "code": "SUPPLIER_DETAILS_INCONSISTENT",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "supplier"
+      },
+      {
+        "code": "TAX_CALC_ERROR",
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "scenario": "arithmetic"
+      },
+      {
+        "code": "TAX_RATE_POLICY_MISMATCH",
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "tax"
+      },
+      {
+        "code": "UNAUTHORIZED_CHARGE",
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "charges"
+      },
+      {
+        "code": "UNKNOWN_PRODUCT_CODE",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "product"
+      },
+      {
+        "code": "UNKNOWN_SUPPLIER",
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "scenario": "supplier"
+      }
+    ],
+    "invoice_level_confusion": {
+      "anomalous->flagged": 42,
+      "clean->not_flagged": 26,
+      "clean->flagged": 4
+    },
+    "false_positives": [
+      [
+        "INV-005_ICC_IC2025-00141",
+        "PRODUCT_DESCRIPTION_VARIANT"
+      ],
+      [
+        "INV-011_ICC_IC2025-00132",
+        "PRODUCT_DESCRIPTION_VARIANT"
+      ],
+      [
+        "INV-013_SCW_SCW-00177",
+        "QTY_EXCEEDS_RECEIVED"
+      ],
+      [
+        "INV-015_KET_KET-25-0314",
+        "LINE_SUBTOTAL_ERROR"
+      ],
+      [
+        "INV-015_KET_KET-25-0314",
+        "MISSING_TAX_INFO"
+      ],
+      [
+        "INV-015_KET_KET-25-0314",
+        "PO_DC_QTY_CONFLICT"
+      ],
+      [
+        "INV-015_KET_KET-25-0314",
+        "QTY_EXCEEDS_ORDERED"
+      ],
+      [
+        "INV-019_ICC_IC2025-00119",
+        "PRODUCT_DESCRIPTION_VARIANT"
+      ],
+      [
+        "INV-022_LLI_LL-INV-0183",
+        "POSSIBLE_DUPLICATE"
+      ],
+      [
+        "INV-027_PPS_PPS-0344-25",
+        "PO_DC_QTY_CONFLICT"
+      ],
+      [
+        "INV-027_PPS_PPS-0344-25",
+        "QTY_EXCEEDS_ORDERED"
+      ],
+      [
+        "INV-029_PPS_PPS-0344-52",
+        "PO_DC_QTY_CONFLICT"
+      ],
+      [
+        "INV-029_PPS_PPS-0344-52",
+        "QTY_EXCEEDS_ORDERED"
+      ],
+      [
+        "INV-032_FIM_FIM-0209",
+        "PO_DC_QTY_CONFLICT"
+      ],
+      [
+        "INV-032_FIM_FIM-0209",
+        "QTY_EXCEEDS_ORDERED"
+      ],
+      [
+        "INV-035_ICC_IC2025-00154",
+        "QTY_EXCEEDS_RECEIVED"
+      ],
+      [
+        "INV-035_ICC_IC2025-00154",
+        "PRODUCT_DESCRIPTION_VARIANT"
+      ],
+      [
+        "INV-055_KET_KET-25-0297",
+        "AMBIGUOUS_PRODUCT"
+      ],
+      [
+        "INV-055_KET_KET-25-0297",
+        "TAX_CALC_ERROR"
+      ],
+      [
+        "INV-055_KET_KET-25-0297",
+        "GRAND_TOTAL_ERROR"
+      ],
+      [
+        "INV-064_QVS_QVS00122",
+        "QTY_EXCEEDS_RECEIVED"
+      ],
+      [
+        "INV-066_QVS_QVS00132",
+        "PO_DC_QTY_CONFLICT"
+      ],
+      [
+        "INV-066_QVS_QVS00132",
+        "QTY_EXCEEDS_ORDERED"
+      ]
+    ],
+    "false_negatives": [
+      [
+        "INV-022_LLI_LL-INV-0183",
+        "DUPLICATE_EXACT"
+      ]
+    ],
+    "severity_agreement": 1.0,
+    "status_agreement": 0.9434,
+    "line_attribution_accuracy": 1.0,
+    "exposure_invoices_within_1pkr": 63,
+    "exposure_mae": "23458.36",
+    "exposure_expected_total": "843027.52",
+    "exposure_engine_total": "2532029.10",
+    "exposure_mismatches": [
+      [
+        "INV-013_SCW_SCW-00177",
+        "0.0",
+        "171600.00"
+      ],
+      [
+        "INV-015_KET_KET-25-0314",
+        "2500.0",
+        "326236.50"
+      ],
+      [
+        "INV-027_PPS_PPS-0344-25",
+        "0.0",
+        "37315.20"
+      ],
+      [
+        "INV-029_PPS_PPS-0344-52",
+        "42552.7",
+        "79867.90"
+      ],
+      [
+        "INV-032_FIM_FIM-0209",
+        "0.0",
+        "27629.85"
+      ],
+      [
+        "INV-035_ICC_IC2025-00154",
+        "1264.39",
+        "220845.02"
+      ],
+      [
+        "INV-055_KET_KET-25-0297",
+        "0.0",
+        "149661.00"
+      ],
+      [
+        "INV-064_QVS_QVS00122",
+        "0.0",
+        "126371.20"
+      ],
+      [
+        "INV-066_QVS_QVS00132",
+        "1250.0",
+        "597042.00"
+      ]
+    ],
+    "clean_invoices": 26,
+    "clean_invoices_with_anomaly_labels": 4,
+    "low_confidence_invoices": 4,
+    "wall_clock_s": 272.8,
+    "citations": {
+      "citations": 135,
+      "verified": 135,
+      "invalid": [],
+      "findings_with_evidence": 70,
+      "findings_total": 81
+    },
+    "timings": {
+      "document_intelligence_s": 272.594,
+      "procurement_evidence_s": 0.001,
+      "reconciliation_audit_s": 0.072,
+      "reporting_review_s": 0.0,
+      "total_s": 272.768,
+      "orchestrator": "langgraph"
+    },
+    "ingestion_errors": []
+  },
+  "extraction_accuracy": {
+    "ocr": {
+      "field_accuracy": 0.9371,
+      "documents": 22,
+      "documents_fully_correct": 10,
+      "by_field": {
+        "invoice_number": 0.6364,
+        "invoice_date": 0.9545,
+        "supplier_name": 0.9091,
+        "po_number": 1.0,
+        "dc_reference": 1.0,
+        "currency": 1.0,
+        "subtotal": 0.9545,
+        "tax_total": 1.0,
+        "grand_total": 1.0,
+        "supplier_tax_id": 0.9545,
+        "due_date": 1.0,
+        "payment_terms": 1.0,
+        "line.product_code": 0.9,
+        "line.quantity": 0.9333,
+        "line.unit_price": 0.9333,
+        "line.discount_pct": 0.9333,
+        "line.line_amount": 0.9333,
+        "line.tax_rate": 0.9333,
+        "line.tax_amount": 0.9333
+      }
+    },
+    "text-layer/plain": {
+      "field_accuracy": 1.0,
+      "documents": 50,
+      "documents_fully_correct": 50,
+      "by_field": {
+        "invoice_number": 1.0,
+        "invoice_date": 1.0,
+        "supplier_name": 1.0,
+        "po_number": 1.0,
+        "dc_reference": 1.0,
+        "currency": 1.0,
+        "subtotal": 1.0,
+        "tax_total": 1.0,
+        "grand_total": 1.0,
+        "supplier_tax_id": 1.0,
+        "due_date": 1.0,
+        "payment_terms": 1.0,
+        "line.product_code": 1.0,
+        "line.quantity": 1.0,
+        "line.unit_price": 1.0,
+        "line.discount_pct": 1.0,
+        "line.line_amount": 1.0,
+        "line.tax_rate": 1.0,
+        "line.tax_amount": 1.0
+      }
+    }
+  },
+  "processing_time_per_document_s": {
+    "ocr": {
+      "mean": 5.665,
+      "max": 11.324,
+      "n": 48
+    },
+    "text-layer/plain": {
+      "mean": 0.004,
+      "max": 0.015,
+      "n": 157
+    }
+  },
+  "product_matching": {
+    "lines": 196,
+    "description_only_correct": 196,
+    "description_only_routed_to_review": 0,
+    "description_only_wrong_auto_match": 0,
+    "description_only_accuracy": 1.0,
+    "auto_match_precision": 1.0,
+    "code_plus_description_accuracy": 1.0,
+    "wrong": []
+  },
+  "rag_retrieval": {
+    "dense": {
+      "contract_clause": {
+        "recall@1": 0.75,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.875,
+        "n": 16
+      },
+      "policy": {
+        "recall@1": 0.8571,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.9167,
+        "n": 14
+      },
+      "price_row": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "n": 40
+      },
+      "ALL": {
+        "recall@1": 0.9143,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.9548,
+        "n": 70
+      }
+    },
+    "keyword": {
+      "contract_clause": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "n": 16
+      },
+      "policy": {
+        "recall@1": 0.9286,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.9643,
+        "n": 14
+      },
+      "price_row": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "n": 40
+      },
+      "ALL": {
+        "recall@1": 0.9857,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.9929,
+        "n": 70
+      }
+    },
+    "hybrid": {
+      "contract_clause": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "n": 16
+      },
+      "policy": {
+        "recall@1": 0.9286,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.9643,
+        "n": 14
+      },
+      "price_row": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "n": 40
+      },
+      "ALL": {
+        "recall@1": 0.9857,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.9929,
+        "n": 70
+      }
+    }
+  },
+  "api_usage": {
+    "llm_calls": 0,
+    "note": "No Gemini API key was configured in this run, so no LLM calls were made and no API cost was incurred."
+  }
+}
