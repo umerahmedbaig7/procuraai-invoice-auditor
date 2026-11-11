@@ -1,0 +1,25 @@
+# secrets
+.env
+*.key
+# generated data (regenerate with scripts/generate_synthetic_data.py or download the release asset)
+procuraai-data/
+procuraai_synthetic_dataset.zip
+uploads/
+processed/
+*.db
+*.sqlite
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+# notebooks / editors
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+# keep curated example reports
+!reports/examples/
