@@ -120,6 +120,7 @@ The unifying idea is that **an LLM should read and explain, but never decide**. 
 │   └── 📄 try_audit.py · make_evaluation_doc.py · build_notebook.py
 │
 ├── 📁 tests/                                  # 54 offline tests (no API key needed)
+├── 📁 outputs/                                # result images show the dashboard and audit summary 
 ├── 📁 notebooks/ProcuraAI_Complete_Implementation.ipynb   # Google Colab walkthrough (15 sections)
 ├── 📁 docs/                                   # architecture.md · evaluation.md
 ├── 📁 data/README.md                          # how to generate / download the dataset
